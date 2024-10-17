@@ -267,6 +267,31 @@ textarea {
   background-color: #ffbf1f;
 }
 
+.fixed_contents{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+.join-btn, .join-detail-btn{
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.join-btn:hover, .join-detail-btn:hover{
+  background-color: #005f73;
+}
+
 footer {
   flex-direction: column;
   background-color: #ffbf1f;
@@ -305,5 +330,6 @@ footer .sns-links img {
 
 footer p {
   margin-top: 40px;
+  margin-bottom: 30px;
   text-align: center;
 }
