@@ -47,6 +47,29 @@ section {
   align-items: center;
 }
 
+.slide-wrapper {
+  display: flex;
+  animation: slide-flow 50s infinite linear;
+}
+
+.slide {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  margin-right: 10px; 
+}
+
+@keyframes slide-flow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
 .case-list {
   counter-reset: case;
   font-size: 3rem;
