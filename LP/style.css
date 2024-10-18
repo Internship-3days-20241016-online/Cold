@@ -50,9 +50,10 @@ section {
 .slide-wrapper {
   display: flex;
   animation: slide-flow 50s infinite linear;
+  overflow: hidden;
 }
 
-.slide-warapper {
+.slide-wrapper img{
   width: 300px;
   height: 200px;
   object-fit: cover;
@@ -358,20 +359,12 @@ footer p {
 
 @media screen and (max-width: 450px){
   .slide-wrapper{
-    display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     width: 100vw;
-    scrollbar-width: none;
   }
 
-  .slide-warapper::-webkit-scrollbar{
-    display: none;
-  }
-
-  .slide-warapper img{
-    width: 80vw;
+  .slide-wrapper img{
+    width: 100%;
     height: auto;
-    flex-shrink: 0;
-    margin-right: 10px;
   }
 }
