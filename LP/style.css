@@ -52,7 +52,7 @@ section {
   animation: slide-flow 50s infinite linear;
 }
 
-.slide {
+.slide-warapper {
   width: 300px;
   height: 200px;
   object-fit: cover;
@@ -334,6 +334,7 @@ footer p {
   text-align: center;
 }
 
+
 /*
 各種案内に関してのクラス
   index_buttons_c
@@ -344,10 +345,33 @@ footer p {
   grid-template-columns: repeat(2, 1fr); /* n列に設定*/
   gap: 10px; /* ボタン間の隙間を設定 */
   justify-items: center; /* ボタンを中央に配置 */
-
 }
+  
 .indexbutton_c{
   padding: 10px 20px;
   text-align: center;
+}
 
+/*  
+レスポンシブ対応
+*/
+
+@media screen and (max-width: 450px){
+  .slide-wrapper{
+    display: flex;
+    overflow-x: auto;
+    width: 100vw;
+    scrollbar-width: none;
+  }
+
+  .slide-warapper::-webkit-scrollbar{
+    display: none;
+  }
+
+  .slide-warapper img{
+    width: 80vw;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
 }
