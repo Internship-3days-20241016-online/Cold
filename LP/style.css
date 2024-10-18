@@ -24,6 +24,39 @@ body {
   font-family: "遊ゴシック", "Yu Gothic", YuGothic, sans-serif;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffbf1f /* ヘッダーの背景色 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 影をつける */
+}
+
+.logo {
+  width: 200px; /* ロゴの幅 */
+  height: auto; /* ロゴの高さは自動調整 */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px; /* 角を丸くする */
+
+  /* ホバー時のスタイル */
+  &:hover {
+    background-color: #ffbf1f;
+  }
+}
+
 header {
   display: flex;
   align-items: center;
