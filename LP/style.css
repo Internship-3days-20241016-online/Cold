@@ -81,17 +81,18 @@ section {
 }
 
 .slide-wrapper {
+  width: 100vw;
   display: flex;
-  animation: slide-flow 50s infinite linear;
+  animation: slide-flow 10s infinite linear;
   overflow: hidden;
 }
 
 .slide-wrapper img{
-  width: 300px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
   border: 1px solid #ddd;
-  margin-right: 10px; 
+
 }
 
 @keyframes slide-flow {
@@ -105,6 +106,7 @@ section {
 
 
 .case-list {
+  text-align: center;
   counter-reset: case;
   font-size: 3rem;
   line-height: 3;
@@ -164,7 +166,7 @@ h2 {
 
 h3 {
   border-bottom: solid 3px #ffbf1f;
-
+  text-align: center;
   font-size: 3.6rem;
   max-width: 840px;
   width: 100%;
@@ -182,6 +184,16 @@ airticle ul {
   list-style-type: disc;
   list-style-position: inside;
 }
+
+.willbe{
+  text-align: center;
+}
+
+img.ck-img{
+  width: 500px;
+  height: 450px;
+}
+
 
 .company dl {
   display: grid;
@@ -381,7 +393,7 @@ footer p {
   justify-items: center; /* ボタンを中央に配置 */
 }
   
-.indexbutton_c{
+.index_button_c{
   padding: 10px 20px;
   text-align: center;
 }
