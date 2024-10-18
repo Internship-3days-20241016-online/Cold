@@ -335,6 +335,27 @@ footer p {
 }
 
 
+/*
+各種案内に関してのクラス
+  index_buttons_c
+  indexbutton_c
+*/
+.index_buttons_c{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* n列に設定*/
+  gap: 10px; /* ボタン間の隙間を設定 */
+  justify-items: center; /* ボタンを中央に配置 */
+}
+  
+.indexbutton_c{
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/*  
+レスポンシブ対応
+*/
+
 @media screen and (max-width: 450px){
   .slide-wrapper{
     display: flex;
