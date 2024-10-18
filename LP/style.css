@@ -52,7 +52,7 @@ section {
   animation: slide-flow 50s infinite linear;
 }
 
-.slide {
+.slide-warapper {
   width: 300px;
   height: 200px;
   object-fit: cover;
@@ -332,4 +332,25 @@ footer p {
   margin-top: 40px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+
+@media screen and (max-width: 450px){
+  .slide-wrapper{
+    display: flex;
+    overflow-x: auto;
+    width: 100vw;
+    scrollbar-width: none;
+  }
+
+  .slide-warapper::-webkit-scrollbar{
+    display: none;
+  }
+
+  .slide-warapper img{
+    width: 80vw;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
 }
